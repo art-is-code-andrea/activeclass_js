@@ -1,0 +1,33 @@
+{
+  "name": "@art_is_code/activeclass_js",
+  "version": "1.0.0",
+  "description": "A lightweight, tag-based JavaScript utility for handling navigation active states with AJAX support.",
+  "type": "module",
+  "main": "dist/activeclass_js.min.js",
+  "module": "dist/activeclass_js.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp src/activeclass_js.js dist/activeclass_js.js && terser src/activeclass_js.js -o dist/activeclass_js.min.js --compress --mangle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "active-class",
+    "navigation",
+    "ajax",
+    "dom-observer"
+  ],
+  "author": "Andrea D'Agostino (art is code)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/art-is-code-andrea/activeclass_js.git"
+  },
+  "devDependencies": {
+    "terser": "^5.31.0"
+  }
+}
