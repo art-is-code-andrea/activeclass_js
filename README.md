@@ -24,6 +24,13 @@ Alternatively, you can include it manually:
   active();
 </script>
 ```
+Or use it directly via CDN (recommended for quick setups):
+```html
+<script type="module">
+  import { active } from 'https://cdn.jsdelivr.net/npm/@art_is_code/activeclass_js/dist/activeclass_js.min.js';
+  active();
+</script>
+```
 ## 💡 Usage Examples
 
 1. **Basic Link**
